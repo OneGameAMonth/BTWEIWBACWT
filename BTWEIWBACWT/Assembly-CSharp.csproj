@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GUI\Timer.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
      <Compile Include="Assets\Scripts\Gameplay\FishingGameLogic.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Player\PullCane.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
