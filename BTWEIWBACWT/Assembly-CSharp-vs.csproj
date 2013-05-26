@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
      <Compile Include="Assets\Scripts\Plugins\GradientBackground.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyOthersOnCollision.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\DestroyThis.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\Transform\TranslateInTime.cs" />
      <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />
