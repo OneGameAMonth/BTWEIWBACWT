@@ -64,7 +64,7 @@ public class FishingGameLogic : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.LoadLevel(0);
+            Application.LoadLevel(Application.loadedLevel);
         }
 
         if (Player.isGameOver && !isWaitingForAction)

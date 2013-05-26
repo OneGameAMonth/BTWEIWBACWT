@@ -26,7 +26,7 @@ public class EndGameDialog : MonoBehaviour {
             }
             else
             {
-                GUI.Label(new Rect(75, 50, 325, 75), "The Mad God will put thee in eternal suffering... <FOREVER>", guiStyle);
+                GUI.Label(new Rect(50, 50, 325, 75), "The Mad God will put thee in eternal suffering... <FOREVER>", guiStyle);
                 Player.isAWinner = false;
             }
 
