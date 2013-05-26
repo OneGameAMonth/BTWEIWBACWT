@@ -3,10 +3,14 @@ using System.Collections;
 
 public class DestroyComponentOnCollision : MonoBehaviour {
     public string componentType = "TranslateInTime";
+    public string destroyerName = "BallMagnet";
 
     void OnCollisionStay(Collision collision)
     {
-        Destroy(GetComponent(componentType));
-        Destroy(this);
+        if (collision.gameObject.name == destroyerName)
+        {
+            Destroy(GetComponent(componentType));
+            Destroy(this);
+        }
     }
 }

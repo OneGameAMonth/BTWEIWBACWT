@@ -48,7 +48,8 @@
      <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
      <Compile Include="Assets\Scripts\GUI\Timer.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\FishingGameLogic.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLogic\FishingGameLogic.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLogic\PickupArea.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\PullCane.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

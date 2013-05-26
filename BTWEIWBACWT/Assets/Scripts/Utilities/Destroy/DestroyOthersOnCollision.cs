@@ -2,8 +2,8 @@ using UnityEngine;
 using System.Collections;
 
 public class DestroyOthersOnCollision : MonoBehaviour {
-    void OnCollisionStay(Collision collision)
+    void OnCollisionExit(Collision collisionInfo)
     {
-        Destroy(collision.gameObject);
+        Destroy(collisionInfo.gameObject);
     }
 }

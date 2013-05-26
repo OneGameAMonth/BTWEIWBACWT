@@ -8,15 +8,21 @@ public class FishingGameLogic : MonoBehaviour
 {
     private Timer levelTimer;
 
-    public float roundTime = 200;
-
-    private float currentTime;
+    private float currentTrashWaitTime;
+    private float currentEnemyWaitTime;
+    
 
     private static FishingGameLogic instance;
 
     private bool isWaitingForAction;
 
     private static readonly int storeNScores = 5;
+
+    public int delaySpawn = 5;
+    public int enemyDelaySpawn = 2;
+
+    public GameObject enemyPrefab;
+    public GameObject largeTrashPrefab;
 
     public static FishingGameLogic Instance
     {
@@ -52,7 +58,8 @@ public class FishingGameLogic : MonoBehaviour
 
     void Update()
     {
-        currentTime -= Time.deltaTime;
+        currentTrashWaitTime += Time.deltaTime;
+        currentEnemyWaitTime += Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -71,6 +78,21 @@ public class FishingGameLogic : MonoBehaviour
         {
             levelTimer.gameObject.SetActive(false);
         }
+
+        if (currentEnemyWaitTime > enemyDelaySpawn)
+        {
+            float spawnProbability = 1 - (levelTimer.seconds / (float)levelTimer.secondsGoal);
+            if (Random.value < spawnProbability) Instantiate(enemyPrefab);
+            currentEnemyWaitTime = 0;
+        }
+
+        if(currentTrashWaitTime > delaySpawn)
+        {
+            Instantiate(largeTrashPrefab);
+            currentTrashWaitTime = 0;
+        }
+        
+
     }
 
     private void submitScore()
