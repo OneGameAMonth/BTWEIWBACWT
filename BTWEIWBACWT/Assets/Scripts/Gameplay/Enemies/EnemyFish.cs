@@ -17,8 +17,15 @@ public class EnemyFish : MonoBehaviour {
     {
         if (collisionInfo.transform.name == target)
         {
-            GameObject.Find(rendererName).GetComponent<LineRenderer>().enabled = false;
-            Player.instance.harmPlayer();
+            if (!Player.isGameOver && !Player.isAWinner)
+            {
+                GameObject.Find(rendererName).GetComponent<LineRenderer>().enabled = false;
+                Player.instance.harmPlayer();
+            }
+            else
+            {
+                GameObject.Find(rendererName).GetComponent<LineRenderer>().material.color = Color.red;
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
     public int maxLives = 5;
     public static Player instance;
     public float harmColorVariationFactor = 0.1f;
+    public static bool isAWinner;
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +19,11 @@ public class Player : MonoBehaviour {
 
     public void harmPlayer()
     {
-        Player.isGameOver = --lifeCount == 0;
-        renderer.material.color = new Color(renderer.material.color.r + harmColorVariationFactor, renderer.material.color.g - harmColorVariationFactor, renderer.material.color.b -harmColorVariationFactor, renderer.material.color.a);
+        Player.isGameOver = --lifeCount <= 0;
+        
+        Color harmedColor = new Color(renderer.material.color.r + harmColorVariationFactor, renderer.material.color.g - harmColorVariationFactor, renderer.material.color.b -harmColorVariationFactor, renderer.material.color.a);
+        renderer.material.color = harmedColor;
+        foreach (Renderer r in GetComponentsInChildren<Renderer>()) r.material.color = harmedColor;
     }
 
     public void restart()
@@ -27,5 +31,6 @@ public class Player : MonoBehaviour {
         totalScore = 0;
         isGameOver = false;
         lifeCount = maxLives;
+        isAWinner = false;
     }
 }

@@ -21,7 +21,7 @@ public class PullCane : MonoBehaviour {
     {
         currentTime += Time.fixedDeltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !Player.isGameOver)
         {
             if (this.transform.localScale.y >= minScale)
             {

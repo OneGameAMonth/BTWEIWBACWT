@@ -24,8 +24,6 @@ public class FishingGameLogic : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject largeTrashPrefab;
 
-    public Material playerMaterial;
-
 
     public static FishingGameLogic Instance
     {
@@ -80,6 +78,7 @@ public class FishingGameLogic : MonoBehaviour
         if (levelTimer.isTimeOver)
         {
             levelTimer.gameObject.SetActive(false);
+            Player.isGameOver = true;
         }
 
         if (currentEnemyWaitTime > enemyDelaySpawn)
