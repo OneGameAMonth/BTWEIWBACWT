@@ -24,6 +24,9 @@ public class FishingGameLogic : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject largeTrashPrefab;
 
+    public Material playerMaterial;
+
+
     public static FishingGameLogic Instance
     {
         get

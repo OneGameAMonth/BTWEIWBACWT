@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
      <Compile Include="Assets\Scripts\GUI\Timer.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Enemies\EnemyFish.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\FishingGameLogic.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\PickupArea.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\PullCane.cs" />
@@ -55,6 +56,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
      <Compile Include="Assets\Scripts\Plugins\GradientBackground.cs" />
+     <Compile Include="Assets\Scripts\Plugins\LightningEffect.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyComponentOnCollision.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyOthersOnCollision.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\OnDestroyKillParent.cs" />
