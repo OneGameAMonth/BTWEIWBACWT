@@ -47,12 +47,15 @@
      <Compile Include="Assets\Scripts\GUI\EndGameDialog.cs" />
      <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
      <Compile Include="Assets\Scripts\GUI\Timer.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
      <Compile Include="Assets\Scripts\Gameplay\FishingGameLogic.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
      <Compile Include="Assets\Scripts\Plugins\GradientBackground.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyComponentOnCollision.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyOthersOnCollision.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Destroy\OnDestroyKillParent.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\DestroyThis.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\Transform\TranslateInTime.cs" />
      <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />

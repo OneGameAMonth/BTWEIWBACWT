@@ -9,4 +9,5 @@ public class TranslateInTime : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, transform.position+additiveVector, 
             Time.fixedDeltaTime * damping);
 	}
+
 }
