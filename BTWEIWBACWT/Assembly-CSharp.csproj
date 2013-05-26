@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
      <Compile Include="Assets\Scripts\Plugins\GradientBackground.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\DestroyThis.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Functions\Transform\TranslateInTime.cs" />
      <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
