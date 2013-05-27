@@ -18,6 +18,7 @@ public class PickupArea : MonoBehaviour {
             clone.transform.position = new Vector3(clone.transform.position.x+scoreXOffset*Player.totalScore,
                 clone.transform.position.y, clone.transform.position.z);
             Player.totalScore++;
+            audio.Play();
         }
 
         Destroy(collision.gameObject);

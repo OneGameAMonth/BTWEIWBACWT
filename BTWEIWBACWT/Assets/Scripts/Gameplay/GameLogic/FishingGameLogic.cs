@@ -73,6 +73,7 @@ public class FishingGameLogic : MonoBehaviour
 
             submitScore();
             isWaitingForAction = true;
+            audio.Play();
         }
 
         if (levelTimer.isTimeOver)

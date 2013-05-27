@@ -11,17 +11,32 @@ public class PullCane : MonoBehaviour {
     public float disminutionStep = 0.01f;
     public Vector3 scaleVector = new Vector3(0, 1);
     public Vector3 targetScale;
+    private MicrophoneInput mic;
+    public float micLoudnessModifier = 0.1f;
 
     void Start()
     {
         targetScale = transform.localScale;
+        if (RequestMicrophone.isSetMic) mic = GameObject.Find("Microphone").GetComponent<MicrophoneInput>();
     }
 
     void FixedUpdate()
     {
         currentTime += Time.fixedDeltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Z) && !Player.isGameOver)
+        if(RequestMicrophone.isSetMic && mic.loudness > 0.01f && !Player.isGameOver)
+        {
+            float micDisminution = mic.loudness * micLoudnessModifier;
+
+            if (this.transform.localScale.y >= minScale)
+            {
+                targetScale = new Vector3(
+                    targetScale.x - micDisminution * scaleVector.x,
+                    targetScale.y - micDisminution * scaleVector.y,
+                    targetScale.z - micDisminution * scaleVector.z);
+            }
+        }
+        else if ((Input.GetKeyDown(KeyCode.Z) && !Player.isGameOver))
         {
             if (this.transform.localScale.y >= minScale)
             {
@@ -43,6 +58,11 @@ public class PullCane : MonoBehaviour {
 
             currentTime = 0;
         };
+
+        if (targetScale.y <= minScale)
+        {
+            targetScale = new Vector3(targetScale.x, minScale, targetScale.z);
+        }
 
         transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.fixedDeltaTime * smoothDamp);
     }
