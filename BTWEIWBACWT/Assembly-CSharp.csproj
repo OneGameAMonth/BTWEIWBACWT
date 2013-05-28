@@ -57,14 +57,12 @@
      <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
      <Compile Include="Assets\Scripts\Plugins\GradientBackground.cs" />
      <Compile Include="Assets\Scripts\Plugins\LightningEffect.cs" />
-     <Compile Include="Assets\Scripts\Plugins\MicrophoneInput.cs" />
      <Compile Include="Assets\Scripts\Sound\Lightning.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyComponentOnCollision.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyOthersOnCollision.cs" />
      <Compile Include="Assets\Scripts\Utilities\Destroy\OnDestroyKillParent.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\DestroyThis.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\Transform\TranslateInTime.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Input\RequestMicrophone.cs" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HighlightTextured.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HiglightClip.shader" />
      <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />
@@ -74,14 +72,14 @@
      <None Include="Assets\Plugins\GameDraw\Shaders\WireFrame.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HighlightPlus.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\Highlight.shader" />
- <Reference Include="Poly2Tri">
- <HintPath>Assets\Plugins\Poly2Tri.dll</HintPath>
- </Reference>
  <Reference Include="clipper_library">
  <HintPath>Assets\Plugins\clipper_library.dll</HintPath>
  </Reference>
  <Reference Include="GameDraw">
  <HintPath>Assets\Plugins\GameDraw.dll</HintPath>
+ </Reference>
+ <Reference Include="Poly2Tri">
+ <HintPath>Assets\Plugins\Poly2Tri.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

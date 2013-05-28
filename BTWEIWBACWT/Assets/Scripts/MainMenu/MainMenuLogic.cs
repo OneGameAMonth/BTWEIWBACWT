@@ -34,7 +34,7 @@ public class MainMenuLogic : MonoBehaviour {
         }
         showInputPlayerName();
         showBestRecords();
-        AdvancedLabel.Draw(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 400, 200), "Before The World Ends I Will Build A Castle With Trash", new NewFontSize(50), new NewColor(Color.black), new NewFont(GUIFont));
+        AdvancedLabel.Draw(new Rect(Screen.width / 2 - 200, Screen.height / 2 - 100, 500, 200), "Before The World Ends I Will Build A Castle With Trash", new NewFontSize(40), new NewColor(Color.black), new NewFont(GUIFont));
 
         if (GUI.Button(new Rect(Screen.width - 50, Screen.height - 50, 50, 50), "[FS]"))
         {
@@ -60,7 +60,7 @@ public class MainMenuLogic : MonoBehaviour {
     private void startGame()
     {
         Player.playerName = textAreaString;
-        Application.LoadLevel("MainGame");
+        Application.LoadLevel("FishGame");
     }
 
     private void showBestRecords()
