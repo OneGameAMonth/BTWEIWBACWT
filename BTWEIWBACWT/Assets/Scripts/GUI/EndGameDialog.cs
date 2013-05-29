@@ -19,7 +19,7 @@ public class EndGameDialog : MonoBehaviour {
             GUI.BeginGroup(new Rect(Screen.width / 2 - 250, 50, 400, 300));
             GUI.Box(new Rect(50, 0, 400, 200), string.Empty);
 
-            if (Player.totalScore >= 7)
+            if (Player.trashLargeScore >= 7)
             {
                 Player.isAWinner = true;
                 GUI.Label(new Rect(50, 25, 350, 50), "Thou be'st The Mad God!", guiStyle);

@@ -11,7 +11,6 @@ public class FishingGameLogic : MonoBehaviour
     private float currentTrashWaitTime;
     private float currentEnemyWaitTime;
     
-
     private static FishingGameLogic instance;
 
     private bool isWaitingForAction;
@@ -23,6 +22,9 @@ public class FishingGameLogic : MonoBehaviour
 
     public GameObject enemyPrefab;
     public GameObject largeTrashPrefab;
+    public GameObject tricubePrefab;
+    public GameObject sTrashPrefab;
+    public GameObject potionPrefab;
 
     public static readonly float spawnCreepersMargin = 0.1f;
 
@@ -94,7 +96,25 @@ public class FishingGameLogic : MonoBehaviour
 
         if(currentTrashWaitTime > delaySpawn)
         {
-            Instantiate(largeTrashPrefab);
+            float rand = Random.value;
+
+            if (rand > 0.90)
+            {
+                Instantiate(potionPrefab);
+            }
+            else if (rand > 0.60)
+            {
+                Instantiate(sTrashPrefab);
+            }
+            else if (rand > 0.30)
+            {
+                Instantiate(tricubePrefab);
+            }
+            else
+            {
+                Instantiate(largeTrashPrefab);
+            }
+            
             currentTrashWaitTime = 0;
         }
         
@@ -105,7 +125,7 @@ public class FishingGameLogic : MonoBehaviour
     {
         for (int i = 1; i <= storeNScores; i++)
         {
-            if(Player.totalScore > PlayerPrefs.GetFloat("Record" + i))
+            if(Player.trashLargeScore > PlayerPrefs.GetFloat("Record" + i))
             {
                 for (int j = i + 1; j <= storeNScores; j++)
                 {
@@ -113,7 +133,7 @@ public class FishingGameLogic : MonoBehaviour
                     PlayerPrefs.SetString("Name" + j, PlayerPrefs.GetString("Name" + (j-1)));
                 }
 
-                PlayerPrefs.SetFloat("Record" + i, Player.totalScore);
+                PlayerPrefs.SetFloat("Record" + i, Player.trashLargeScore);
                 PlayerPrefs.SetString("Name" + i, Player.playerName);
             }
         }
