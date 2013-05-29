@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_3;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR;Microphone</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -44,8 +44,26 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\CombineChildren.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\MeshCombineUtility.cs" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\HighlightTextured.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\HiglightClip.shader" />
+     <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\GridHighlight.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\HighlightEdge.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\PainterShader.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\WireFrame.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\HighlightPlus.shader" />
+     <None Include="Assets\Plugins\GameDraw\Shaders\Highlight.shader" />
+ <Reference Include="clipper_library">
+ <HintPath>Assets\Plugins\clipper_library.dll</HintPath>
+ </Reference>
+ <Reference Include="GameDraw">
+ <HintPath>Assets\Plugins\GameDraw.dll</HintPath>
+ </Reference>
+ <Reference Include="Poly2Tri">
+ <HintPath>Assets\Plugins\Poly2Tri.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

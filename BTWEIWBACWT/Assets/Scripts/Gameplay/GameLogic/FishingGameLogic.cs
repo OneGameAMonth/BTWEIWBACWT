@@ -24,6 +24,7 @@ public class FishingGameLogic : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject largeTrashPrefab;
 
+    public static readonly float spawnCreepersMargin = 0.1f;
 
     public static FishingGameLogic Instance
     {
@@ -85,6 +86,8 @@ public class FishingGameLogic : MonoBehaviour
         if (currentEnemyWaitTime > enemyDelaySpawn)
         {
             float spawnProbability = 1 - (levelTimer.seconds / (float)levelTimer.secondsGoal);
+            spawnProbability += spawnCreepersMargin;
+
             if (Random.value < spawnProbability) Instantiate(enemyPrefab);
             currentEnemyWaitTime = 0;
         }
