@@ -47,10 +47,12 @@
      <Compile Include="Assets\Scripts\GUI\EndGameDialog.cs" />
      <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
      <Compile Include="Assets\Scripts\GUI\Timer.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Behaviours\OnColliderEnterStop.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Enemies\EnemyFish.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\FishingGameLogic.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\PickupArea.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\General\Drag.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\MoveBeteenLimits.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\PullCane.cs" />

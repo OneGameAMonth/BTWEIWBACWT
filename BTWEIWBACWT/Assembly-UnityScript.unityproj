@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E6538159-64E9-231E-0740-2A82C337B10E}</ProjectGuid>
+	<ProjectGuid>{5A60F412-CD2C-D328-1E3E-4FD72BC0A6B2}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,30 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\GUI\EndGameDialog.cs" />
-     <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
-     <Compile Include="Assets\Scripts\GUI\Timer.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Behaviours\OnColliderEnterStop.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Enemies\EnemyFish.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\GameLogic\FishingGameLogic.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\GameLogic\PickupArea.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\General\Drag.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Player\CharacterMovement.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Player\MoveBeteenLimits.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Player\PullCane.cs" />
-     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\Plugins\AdvanceLabel.cs" />
-     <Compile Include="Assets\Scripts\Plugins\GradientBackground.cs" />
-     <Compile Include="Assets\Scripts\Plugins\LightningEffect.cs" />
-     <Compile Include="Assets\Scripts\Sound\Lightning.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyComponentOnCollision.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Destroy\DestroyOthersOnCollision.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Destroy\OnDestroyKillParent.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Functions\DestroyThis.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Functions\Transform\ConstantVelocity.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Functions\Transform\TranslateInTime.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Behaviours\Drag.js" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HighlightTextured.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HiglightClip.shader" />
      <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />
