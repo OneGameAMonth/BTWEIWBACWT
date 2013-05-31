@@ -35,7 +35,6 @@ public class MainMenuLogic : MonoBehaviour {
         showInputPlayerName();
         showBestRecords();
 
-
         if (GUI.Button(new Rect(Screen.width - 50, Screen.height - 50, 50, 50), "[FS]"))
         {
             Screen.fullScreen = !Screen.fullScreen;
@@ -72,7 +71,7 @@ public class MainMenuLogic : MonoBehaviour {
         {
             float playerScore = PlayerPrefs.GetFloat("Record" + i);
 
-            string labelPlayer = string.Format("~{0}: {1} mts", PlayerPrefs.GetString("Name" + i, textAreaString), playerScore.ToString().Replace(".", "'"));
+            string labelPlayer = string.Format("~{0}: {1} ·", PlayerPrefs.GetString("Name" + i, textAreaString), playerScore.ToString().Replace(".", "'"));
             AdvancedLabel.Draw(new Rect(10, 10 + (i * 20), 200, 200), labelPlayer, new NewFontSize(15), new NewColor(Color.white), new NewFontStyle(FontStyle.Italic));
         }
     }

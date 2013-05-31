@@ -9,12 +9,13 @@ public class CamaraDirection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (TimerControl.hasBegunTrueEnd) return;
+
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.identity, Time.deltaTime * speed);
 
         if (transform.rotation.eulerAngles.y < 0.2f)
         {
             Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, maxFOW, Time.deltaTime*smoothFOW);
         }
-
     }
 }

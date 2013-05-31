@@ -6,7 +6,6 @@ public class EndCharacterAnimation : MonoBehaviour {
     public GameObject ritghEye;
 
 
-
     void ScaleEyesInY()
     {
         leftEye.AddComponent<ScaleInTime>();
@@ -18,8 +17,8 @@ public class EndCharacterAnimation : MonoBehaviour {
 
     void ScaleEyesInX()
     {
-        ritghEye.GetComponent<ScaleInTime>().additiveVector = new Vector3(10, 10);
-        leftEye.GetComponent<ScaleInTime>().additiveVector = new Vector3(10, 10);
+        ritghEye.GetComponent<ScaleInTime>().additiveVector = new Vector3(10, 10, 10);
+        leftEye.GetComponent<ScaleInTime>().additiveVector = new Vector3(10, 10, 10);
     }
 
     void loadEnd()

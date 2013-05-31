@@ -20,7 +20,7 @@ public class EndGameDialog : MonoBehaviour {
             GUI.BeginGroup(new Rect(Screen.width / 2 - 250, 50, 400, 300));
             GUI.Box(new Rect(50, 0, 400, 200), string.Empty);
 
-            if (Player.lifeCount > 0)
+            if (Player.lifeCount > 0 && (Player.sTrashScore+Player.trashLargeScore+Player.tricubeScore) > 0)
             {
                 Player.isAWinner = true;
                 GUI.Label(new Rect(125, 50, 200, 75), "You have fished all the materials", guiStyle);
@@ -31,7 +31,7 @@ public class EndGameDialog : MonoBehaviour {
                 Player.isAWinner = false;
             }
 
-            if (GUI.Button(new Rect(125, 150, 200, 25), (!Player.isAWinner) ? "PRESS TO RETURN" : "Go to Build Phase"))
+            if (GUI.Button(new Rect(125, 150, 200, 25), (!Player.isAWinner) ? "PRESS TO RETRY" : "Go to Build Phase"))
             {
                 if (Player.isAWinner)
                 {
