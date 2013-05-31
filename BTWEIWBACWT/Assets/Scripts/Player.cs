@@ -2,12 +2,12 @@ using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour {
-    public static float highgerY;
+    public static float higherY;
     public static int trashLargeScore = 1;
-    public static int tricubeScore = 1;
+    public static int tricubeScore = 8;
     public static int sTrashScore = 1;
     public static float magicPotions;    
-    public static string playerName;
+    public static string playerName = "XTestPlayer";
     public static bool isGameOver;
     public static int lifeCount;
     public int maxLives = 5;

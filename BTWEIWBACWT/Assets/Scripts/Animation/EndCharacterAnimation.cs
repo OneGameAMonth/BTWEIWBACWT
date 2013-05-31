@@ -8,6 +8,8 @@ public class EndCharacterAnimation : MonoBehaviour {
 
     void ScaleEyesInY()
     {
+        audio.Play();
+
         leftEye.AddComponent<ScaleInTime>();
         ritghEye.AddComponent<ScaleInTime>();
 
