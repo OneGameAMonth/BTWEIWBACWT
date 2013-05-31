@@ -50,8 +50,9 @@
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\OnColliderEnterStop.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Enemies\EnemyFish.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\GameLogic\FishingGameLogic.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\GameLogic\PickupArea.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLogic\Building\SpawnPieces.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLogic\Fishing\FishingGameLogic.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLogic\Fishing\PickupArea.cs" />
      <Compile Include="Assets\Scripts\Gameplay\General\Drag.cs" />
      <Compile Include="Assets\Scripts\Gameplay\General\MoveCamera.cs" />
      <Compile Include="Assets\Scripts\Gameplay\General\RotateWithKeys.cs" />
