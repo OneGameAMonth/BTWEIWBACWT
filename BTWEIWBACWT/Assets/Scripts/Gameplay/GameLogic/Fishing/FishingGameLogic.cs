@@ -90,6 +90,11 @@ public class FishingGameLogic : MonoBehaviour
             currentEnemyWaitTime = 0;
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if(currentTrashWaitTime > delaySpawn)
         {
             float rand = Random.value;

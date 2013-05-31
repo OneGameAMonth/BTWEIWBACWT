@@ -18,6 +18,11 @@ public class MainMenuLogic : MonoBehaviour {
         {
             startGame();
         }
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 	}
 
     void OnGUI()

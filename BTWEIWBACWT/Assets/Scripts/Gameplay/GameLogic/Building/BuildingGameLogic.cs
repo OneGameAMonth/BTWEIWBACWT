@@ -29,6 +29,11 @@ public class BuildingGameLogic : MonoBehaviour {
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if (!Player.isGameOver && levelTimer.isTimeOver)
         {
             levelTimer.gameObject.SetActive(false);
