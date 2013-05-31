@@ -2,9 +2,10 @@ using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour {
-    public static int trashLargeScore = 5;
-    public static int tricubeScore = 5;
-    public static int sTrashScore = 5;
+    public static float highgerY;
+    public static int trashLargeScore = 1;
+    public static int tricubeScore = 1;
+    public static int sTrashScore = 1;
     public static float magicPotions;    
     public static string playerName;
     public static bool isGameOver;

@@ -15,8 +15,6 @@ public class FishingGameLogic : MonoBehaviour
 
     private bool isWaitingForAction;
 
-    private static readonly int storeNScores = 5;
-
     public int delaySpawn = 5;
     public int enemyDelaySpawn = 2;
 
@@ -27,7 +25,7 @@ public class FishingGameLogic : MonoBehaviour
     public GameObject potionPrefab;
 
     public static readonly float spawnCreepersMargin = 0.1f;
-
+     
     public static FishingGameLogic Instance
     {
         get
@@ -73,8 +71,6 @@ public class FishingGameLogic : MonoBehaviour
         if (Player.isGameOver && !isWaitingForAction)
         {
             levelTimer.pauseTimer();
-
-            submitScore();
             isWaitingForAction = true;
             audio.Play();
         }
@@ -119,24 +115,6 @@ public class FishingGameLogic : MonoBehaviour
         }
         
 
-    }
-
-    private void submitScore()
-    {
-        for (int i = 1; i <= storeNScores; i++)
-        {
-            if(Player.trashLargeScore > PlayerPrefs.GetFloat("Record" + i))
-            {
-                for (int j = i + 1; j <= storeNScores; j++)
-                {
-                    PlayerPrefs.SetFloat("Record" + j, PlayerPrefs.GetFloat("Record" + (j-1)));
-                    PlayerPrefs.SetString("Name" + j, PlayerPrefs.GetString("Name" + (j-1)));
-                }
-
-                PlayerPrefs.SetFloat("Record" + i, Player.trashLargeScore);
-                PlayerPrefs.SetString("Name" + i, Player.playerName);
-            }
-        }
     }
 
 }

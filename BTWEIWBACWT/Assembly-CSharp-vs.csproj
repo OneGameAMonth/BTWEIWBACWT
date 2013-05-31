@@ -44,12 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Animation\EndCharacterAnimation.cs" />
+     <Compile Include="Assets\Scripts\Extension\MoreEnumerable.cs" />
      <Compile Include="Assets\Scripts\GUI\EndGameDialog.cs" />
      <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
      <Compile Include="Assets\Scripts\GUI\Timer.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\OnColliderEnterStop.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Behaviours\PullerPusher.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Enemies\EnemyFish.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLogic\Building\BuildingGameLogic.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\Building\SpawnPieces.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\Fishing\FishingGameLogic.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\Fishing\PickupArea.cs" />
@@ -70,6 +73,7 @@
      <Compile Include="Assets\Scripts\Utilities\Destroy\OnDestroyKillParent.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\DestroyThis.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\Transform\ConstantVelocity.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Functions\Transform\ScaleInTime.cs" />
      <Compile Include="Assets\Scripts\Utilities\Functions\Transform\TranslateInTime.cs" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HighlightTextured.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HiglightClip.shader" />

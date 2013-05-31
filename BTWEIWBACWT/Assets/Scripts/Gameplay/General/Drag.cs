@@ -9,7 +9,7 @@ public class Drag : MonoBehaviour {
     private float length;
 
 	void Update () {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !Player.isGameOver)
         {  
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (!dragTransform)
