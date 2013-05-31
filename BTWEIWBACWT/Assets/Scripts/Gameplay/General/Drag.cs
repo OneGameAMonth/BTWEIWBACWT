@@ -2,10 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class Drag : MonoBehaviour {
-
     public float speed = 5;
     public float maxSpeed = 15;
-    private Transform dragTransform;
+    public static Transform dragTransform;
     private RaycastHit hit;
     private float length;
 

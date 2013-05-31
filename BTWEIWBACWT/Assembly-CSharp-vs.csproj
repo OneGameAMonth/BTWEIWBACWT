@@ -53,6 +53,8 @@
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\FishingGameLogic.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLogic\PickupArea.cs" />
      <Compile Include="Assets\Scripts\Gameplay\General\Drag.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\General\MoveCamera.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\General\RotateWithKeys.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\MoveBeteenLimits.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Player\PullCane.cs" />
