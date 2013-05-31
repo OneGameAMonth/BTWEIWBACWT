@@ -49,7 +49,7 @@ public class MainMenuLogic : MonoBehaviour {
         Rect textArea = new Rect(105, 150, 150, 30);
         textAreaString = GUI.TextArea(textArea, textAreaString, 12, guiStyle);
 
-        if (GUI.Button(new Rect(260, 150, 40, 30), "Build!"))
+        if (GUI.Button(new Rect(260, 150, 40, 30), "Fish!"))
         {
             startGame();
         }

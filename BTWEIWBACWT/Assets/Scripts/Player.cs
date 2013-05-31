@@ -17,6 +17,7 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        lifeCount = maxLives;
         instance = this;
         restart();
 	}

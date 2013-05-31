@@ -22,7 +22,7 @@ public class BuildingGameLogic : MonoBehaviour {
 
     private void resetLevel()
     {
-        levelTimer.secondsGoal = (Player.sTrashScore + Player.trashLargeScore + Player.tricubeScore) * 1;
+        levelTimer.secondsGoal = (Player.sTrashScore + Player.trashLargeScore + Player.tricubeScore) * secsMultiplier;
         levelTimer.startTimer();
     }
 

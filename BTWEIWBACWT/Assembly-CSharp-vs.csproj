@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animation\EndCharacterAnimation.cs" />
+     <Compile Include="Assets\Scripts\Endgame\CamaraDirection.cs" />
      <Compile Include="Assets\Scripts\Extension\MoreEnumerable.cs" />
      <Compile Include="Assets\Scripts\GUI\EndGameDialog.cs" />
      <Compile Include="Assets\Scripts\GUI\ScreenResizer.cs" />
@@ -80,6 +81,7 @@
      <None Include="Assets\Shaders\TransparentSingleColorShader.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\GridHighlight.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HighlightEdge.shader" />
+     <None Include="Assets\Shaders\AlphaSelfIllum.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\PainterShader.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\WireFrame.shader" />
      <None Include="Assets\Plugins\GameDraw\Shaders\HighlightPlus.shader" />

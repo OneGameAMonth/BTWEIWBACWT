@@ -20,6 +20,8 @@ public class PullCane : MonoBehaviour {
 
     void FixedUpdate()
     {
+        if (Player.isGameOver) return;
+
         currentTime += Time.fixedDeltaTime;
 
         if (Input.GetKey(KeyCode.W))
