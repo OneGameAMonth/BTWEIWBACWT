@@ -7,7 +7,7 @@ May Game for One Game A Month
 http://onegameamonth.com
 7 Day Fishing Jam
 http://jam.legendaryfisher.com/
-#1GAMCRUNCH
+1GAMCRUNCH
 http://1gamcrunch.playvue.com/
 
 Made by Vladimir de la Cruz
